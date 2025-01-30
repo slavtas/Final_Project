@@ -1,7 +1,7 @@
 import axios from "axios";
-
+console.log('VITE_BASE_API', import.meta.env.VITE_BASE_URL)
 const url = import.meta.env.VITE_BASE_URL || 'http://localhost:5000'
-
+console.log("url: ", url)
 //const API_URL = `http://localhost:5000/api-v1`;
 const API_URL = new URL('api-v1', API_URL)
 console.log(API_URL)
