@@ -28,6 +28,7 @@ app.use("/api-v1", routes);
 app.use(express.static(path.join(__dirname, "../frontend/dist")))
 
 app.get ("*", (req, res) => {
+  console.log("sendFile")
   res.sendFile(path.resolve(__dirname, "../frontend/dist", "index.html"))
 }
 );
